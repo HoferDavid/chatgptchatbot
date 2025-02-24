@@ -6,15 +6,19 @@
     <title>chatbot</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <header>chatbot</header>
 
-    <div class="container">
-        <input type="text" placeholder="ask question">
+    <div class="container mt-16" id="msgContainer">
+        <div class="msg">hi, pls ask a question...</div>
     </div>
 
-
-    
+    <form class="container container-bottom" onsubmit="postChatMessage(); return false;">
+        <input type="text" placeholder="your question..." id="chatField">
+        <button>send</button>
+    </form>
 </body>
 </html>
